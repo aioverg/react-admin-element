@@ -1,0 +1,76 @@
+@import url("@/assets/css/default.less");
+
+// 左边
+.layout_left {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 240px;
+  background-color: #000;
+  z-index: 100;
+}
+
+// 右边
+.layout_right {
+  padding-left: 15rem;
+  padding-top: 80px;
+  position: relative;
+}
+
+// 右边 header
+.layout_right_header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 15rem;
+  z-index: 100;
+  background-color: #fff;
+}
+
+// 右边 tab
+.layout_right_tab {
+  position: fixed;
+  top: 40px;
+  right: 0;
+  left: 15rem;
+  z-index: 100;
+  background-color: #fff;
+}
+
+// 右边内容
+.layout_right_contont {
+  width: 100%;
+}
+
+// 左边折叠
+.layout_left_collapsed {
+  width: 5rem;
+}
+
+// 左边折叠时右边
+.layout_left_collapsed_right {
+  padding-left: 5rem;
+}
+.layout_right_collapsed_right_header,
+.layout_right_collapsed_right_tab {
+  left: 5rem;
+}
+
+// 左边隐藏
+.layout_left_hidden {
+  display: none;
+}
+
+// 左边隐藏时右边
+.layout_left_hidden_right {
+  padding-left: 0;
+}
+.layout_right_hidden_right_header,
+.layout_right_hidden_right_tab {
+  left: 0;
+}
+
+.layout_right_header_top_none {
+  display: none;
+}

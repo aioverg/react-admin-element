@@ -1,0 +1,55 @@
+.global_transition_all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+// 动画 - 旋转 360°
+@keyframes rotate360 {
+  from {
+    transform: 0;
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.global_rotate_360 {
+  animation: rotate360 1s linear infinite;
+}
+
+// 阻止点击事件
+.global_pointer_events_none {
+  pointer-events: none;
+}
+
+// 动画 - 抖动
+@keyframes shake {
+  0% {
+    transform: translate(-1px);
+  }
+
+  10% {
+    transform: translate(2px, 1px);
+  }
+
+  30% {
+    transform: translate(-3px, 2px);
+  }
+
+  35% {
+    filter: blur(4px);
+    transform: translate(2px, -3px);
+  }
+
+  45% {
+    filter: blur(0);
+    transform: translate(2px, 2px) skewY(-8deg) scaleX(0.96);
+  }
+
+  50% {
+    transform: translate(-3px, 1px);
+  }
+}
+.global_shake {
+  animation: shake 0.6s ease-in-out infinite alternate;
+}
